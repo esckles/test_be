@@ -7,7 +7,7 @@ const userModel = new mongoose_1.Schema({
     },
     email: {
         type: String,
-        // unique: true,
+        unique: true,
     },
     password: {
         type: String,

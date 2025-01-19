@@ -21,7 +21,7 @@ const userModel = new Schema<iUserData>(
     },
     email: {
       type: String,
-      // unique: true,
+      unique: true,
     },
     password: {
       type: String,

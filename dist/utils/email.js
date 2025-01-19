@@ -87,7 +87,8 @@ const createAccountEmail = (user) => __awaiter(void 0, void 0, void 0, function*
     const id = user === null || user === void 0 ? void 0 : user._id;
     const pathFile = node_path_1.default.join(__dirname, "../views/otp.ejs");
     // let verificationURL = `https://testfe-0gq1.onrender.com/auth/otp/${id}`;
-    let verificationURL = `http://localhost:5173/auth/otp/${id}`;
+    // let verificationURL = `http://localhost:5173/auth/otp/${id}`;
+    let verificationURL = `https://test-fe-mu.vercel.app/auth/otp/${id}`;
     const html = yield ejs_1.default.renderFile(pathFile, {
         name: user === null || user === void 0 ? void 0 : user.email,
         url: verificationURL,
