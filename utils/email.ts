@@ -85,9 +85,9 @@ export const createAccountEmail = async (user: any) => {
 
   const id = user?._id;
   const pathFile = path.join(__dirname, "../views/otp.ejs");
-  // let verificationURL = `https://testfe-0gq1.onrender.com/auth/otp/${id}`;
-  // let verificationURL = `http://localhost:5173/auth/otp/${id}`;
-  let verificationURL = `https://astonishing-shortbread-8dcfcf.netlify.app/auth/otp/${id}`;
+  // let verificationURL = `https://testfe-0gq1.onrender.com/otp/${id}`;
+  // let verificationURL = `http://localhost:5173/otp/${id}`;
+  let verificationURL = `https://test-fe-ecommerce.web.app/otp/${id}`;
   const html = await ejs.renderFile(pathFile, {
     name: user?.email,
     url: verificationURL,
