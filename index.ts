@@ -12,5 +12,5 @@ app.use(cors());
 mainApp(app);
 app.listen(process.env.PORT as string, () => {
   dbConfig();
-  console.log(`server is running on PORT ${process.env.PORT}`);
+  console.log(`Server is Running on PORT ${process.env.PORT}`);
 });
